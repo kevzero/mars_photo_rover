@@ -1,6 +1,6 @@
 # Mars Rover Photo Downloader
 
-This Python program allows you to download real images taken by NASA’s Mars rovers (Curiosity, Opportunity, and Perseverance) for a specific Earth date. It uses the official NASA Mars Rover Photos API and stores the images locally in organized folders.
+This program allows you to download real images taken by NASA’s Mars rovers (Curiosity, Opportunity, and Perseverance) for a specific Earth date. It uses the official NASA Mars Rover Photos API and stores the images locally in organized folders.
 
 ## Features
 
