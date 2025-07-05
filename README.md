@@ -1,44 +1,48 @@
-Mars Rover Photo Downloader
-This Python script allows users to download photos taken by NASA's Mars Rovers (Curiosity, Opportunity, Perseverance) on a specific Earth date. It uses the official NASA Mars Rover Photos API and saves the downloaded images into a local folder named after the rover and date.
+# Mars Rover Photo Downloader
 
-Features
-Choose which rover to query (Curiosity, Opportunity, Perseverance)
+This Python program allows you to download real images taken by NASA’s Mars rovers (Curiosity, Opportunity, and Perseverance) for a specific Earth date. It uses the official NASA Mars Rover Photos API and stores the images locally in organized folders.
 
-Enter any valid Earth date (format: YYYY-MM-DD)
+## Features
 
-Downloads all available images taken on that date by the selected rover
+- Choose the Mars rover (`curiosity`, `opportunity`, or `perseverance`)
+- Enter a specific Earth date (in format `YYYY-MM-DD`)
+- Downloads all available photos for that date
+- Saves the images in a local folder named `mars_photos/ROVER_DATE`
+- Displays the download progress in the terminal
 
-Saves images in a structured folder: mars_photos/{rover}_{date}
+## How to Use
 
-Prints status messages for each image downloaded or skipped
+1. Make sure Python 3 is installed on your system.
+2. Install the `requests` library if it's not already installed:
+   `pip install requests`
+3. Run the script:
+   `python mars_rover_downloader.py`
+4. When prompted:
+   - Enter the rover name (e.g. `curiosity`)
+   - Enter the Earth date (e.g. `2025-07-05`)
+5. The program will download all the available images for that date into a folder.
 
-Requirements
-Python 3.x
+## Output Example
 
-requests library (install with: pip install requests)
+If photos are found:
+📷 Found 15 photos. Downloading...
+✅ Saved: mars_photos/curiosity_2025-07-05/Curiosity_2025-07-05_Front_Hazcam_0.jpg
 
-How to Use
-Run the script using: python script_name.py
+If no photos are found:
+📭 No photos found for perseverance on 2025-07-01.
 
-Enter the name of the rover when prompted
+## Folder Structure
 
-Enter the desired Earth date (e.g., 2025-07-01)
+mars_photos/
+└── curiosity_2025-07-05/
+    ├── Curiosity_2025-07-05_CameraName_0.jpg
+    ├── Curiosity_2025-07-05_CameraName_1.jpg
+    └── ...
 
-The script will connect to NASA's API, download available images, and save them in a local folder.
+## API Key
 
-Example Output
-If you select "curiosity" and the date "2025-07-01", the script will download all available images for that rover and date into the folder: mars_photos/curiosity_2025-07-01/
+By default, the script uses NASA’s public `DEMO_KEY`, which is rate-limited. To avoid issues, register for a free API key at https://api.nasa.gov and replace the value of `API_KEY` in the script.
 
-Each file is named using the rover, date, camera name, and index, like: curiosity_2025-07-01_Navigation_Camera_0.jpg
+## License
 
-Notes
-If no images are found for the given date, the script will notify you.
-
-If there are connection issues or NASA's API is down, an error message will be shown.
-
-The default API key used is "DEMO_KEY", which has rate limits. You can get your own key for free at https://api.nasa.gov
-
-License
-This script is provided for educational and demonstration purposes. You are free to use, modify, and distribute it as needed.
-
-Tutto in una sola finestra, come richiesto. Fammi sapere se vuoi anche il file .txt.
+This script is free for educational and personal use. Created to explore space data using Python and promote scientific curiosity.
