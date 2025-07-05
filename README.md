@@ -33,11 +33,13 @@ If no photos are found:
 
 ## Folder Structure
 
-mars_photos/
-└── curiosity_2025-07-05/
-    ├── Curiosity_2025-07-05_CameraName_0.jpg
-    ├── Curiosity_2025-07-05_CameraName_1.jpg
-    └── ...
+    curiosity_2025-07-05/
+
+      • curiosity_2025-07-05_Front_Hazard_Avoidance_Camera_0.jpg
+      • curiosity_2025-07-05_Front_Hazard_Avoidance_Camera_1.jpg
+      • curiosity_2025-07-05_Navigation_Camera_2.jpg
+      • curiosity_2025-07-05_Mast_Camera_3.jpg
+      • ...
 
 ## API Key
 
