@@ -31,15 +31,6 @@ If photos are found:
 If no photos are found:
 📭 No photos found for perseverance on 2025-07-01.
 
-## Folder Structure
-
-    curiosity_2025-07-05/
-
-      • curiosity_2025-07-05_Front_Hazard_Avoidance_Camera_0.jpg
-      • curiosity_2025-07-05_Front_Hazard_Avoidance_Camera_1.jpg
-      • curiosity_2025-07-05_Navigation_Camera_2.jpg
-      • curiosity_2025-07-05_Mast_Camera_3.jpg
-      • ...
 
 ## API Key
 
